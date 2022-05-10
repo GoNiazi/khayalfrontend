@@ -6,6 +6,7 @@ import "react-multi-carousel/lib/styles.css";
 import Head from "next/head";
 import Script from "next/script";
 import { useEffect } from "react";
+import { API_URL } from "../url";
 import {
   ApolloClient,
   InMemoryCache,
@@ -17,7 +18,7 @@ import {
 const client = new ApolloClient({
   ssrMode: true,
   link: createHttpLink({
-    uri: "http://localhost:1337/graphql",
+    uri: `${API_URL}/graphql`,
     credentials: "same-origin",
   }),
   cache: new InMemoryCache(),

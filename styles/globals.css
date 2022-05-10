@@ -14,3 +14,12 @@ a {
 * {
   box-sizing: border-box;
 }
+.add-shadow{
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px;
+
+}
+.floatingNav {
+  width: calc(100vh - 100px); 
+  border-radius: 2px;
+  box-shadow: 0px 1px 10px #999;
+}

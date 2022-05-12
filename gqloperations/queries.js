@@ -34,6 +34,7 @@ export const GET_HEROSECTION = gql`
   query HeroSection($slug: String) {
     homeSectionTypes(filters: { slug: { eq: $slug } }) {
       data {
+        id
         attributes {
           post {
             data {
@@ -66,6 +67,7 @@ export const GET_CHALLENGESSECTION = gql`
   query ChallengesSection($slug: String) {
     homeSectionTypes(filters: { slug: { eq: $slug } }) {
       data {
+        id
         attributes {
           post {
             data {
@@ -114,6 +116,7 @@ export const GET_CUSTOMER_SATISFACTION_SECTION = gql`
   query customersatisfactionSection($slug: String) {
     homeSectionTypes(filters: { slug: { eq: $slug } }) {
       data {
+        id
         attributes {
           post {
             data {
@@ -207,9 +210,11 @@ export const GET_CLIENTS = gql`
   query clients {
     clients(sort: ["id:desc"]) {
       data {
+        id
         attributes {
           logo {
             data {
+              id
               attributes {
                 url
               }
@@ -225,9 +230,11 @@ export const GET_GALLERY = gql`
   query gallery {
     gallery {
       data {
+        id
         attributes {
           Images(sort: ["id:asc"]) {
             data {
+              id
               attributes {
                 url
               }

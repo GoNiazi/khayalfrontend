@@ -14,7 +14,6 @@ export const GET_NAVBAR = gql`
                 target
               }
               section {
-                id
                 links {
                   id
                   label

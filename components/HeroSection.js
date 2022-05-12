@@ -35,7 +35,7 @@ const HeroSection = () => {
                 </div>
 
                 <div className="d-grid d-sm-flex gap-3 mb-5">
-                  <Link href="/aboutus">
+                  <Link href="/about-us">
                     <a className="btn btn-primary">About Us</a>
                   </Link>
                 </div>

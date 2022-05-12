@@ -14,7 +14,9 @@ const HeroSection = () => {
   if (error) {
     console.log(error);
   }
-
+  if (data) {
+    console.log("hero", data);
+  }
   return (
     <>
       {data.homeSectionTypes.data.map(({ id, attributes }) => {

@@ -1,0 +1,10 @@
+
+@media screen and (max-width: 575px) {
+    .cardwidth{
+        width: 353px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+

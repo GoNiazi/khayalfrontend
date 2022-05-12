@@ -18,9 +18,6 @@ const Services = () => {
 
   post = data.services.data[0].attributes.posts.data.slice(0, 6);
 
-  if (post) {
-    console.log("post", post[0].attributes.title);
-  }
   return (
     <div className="container" style={{ marginTop: "80px" }}>
       <div className="row">

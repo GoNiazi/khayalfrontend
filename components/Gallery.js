@@ -3,6 +3,7 @@ import { useQuery } from "@apollo/client";
 import { GET_GALLERY } from "../gqloperations/queries";
 import Link from "next/link";
 import GalleryModal from "../components/GalleryModal";
+import styles from "../styles/Gallery.module.css";
 const Gallery = () => {
   const [pics, setpics] = useState([]);
   const [modalShow, setmodalShow] = useState(false);
@@ -33,8 +34,10 @@ const Gallery = () => {
                 style={{ marginTop: "20px" }}
                 onClick={() => setmodalShow(true)}
               >
-                <a className="card card-sm card-transition-zoom">
-                  <div className="card-transition-zoom-item">
+                <a
+                  className={`card card-sm card-transition-zoom ${styles.cardwidth}`}
+                >
+                  <div className="card-transition-zoom-item ">
                     <img
                       className="card-img"
                       src={attributes.url}

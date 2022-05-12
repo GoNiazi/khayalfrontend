@@ -20,7 +20,11 @@ const CustomerSatisfaction = () => {
     <>
       {data.homeSectionTypes.data.map(({ id, attributes }) => {
         return (
-          <div className="overflow-hidden " style={{ marginTop: "80px" }}>
+          <div
+            key={id}
+            className="overflow-hidden "
+            style={{ marginTop: "80px" }}
+          >
             <div className="container">
               <div className="bg-dark rounded-3 p-4 p-sm-8 p-lg-10 mx-md-n7 mx-lg-n10">
                 <div className="row align-items-lg-center">

@@ -21,7 +21,7 @@ const HeroSection = () => {
     <>
       {data.homeSectionTypes.data.map(({ id, attributes }) => {
         return (
-          <div className="container content-space-t-3">
+          <div key={id} className="container content-space-t-3">
             <div className="row justify-content-lg-between align-items-lg-center">
               <div className="col-lg-5 mb-5 mb-lg-0">
                 <div className="mb-5">

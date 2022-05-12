@@ -6,7 +6,7 @@ import { API_URL } from "../url";
 import axios from "axios";
 import FormCheck from "react-bootstrap/FormCheck";
 import Form from "react-bootstrap/Form";
-const feedback = () => {
+const Feedback = () => {
   const [firstname, setfirstname] = useState("");
   const [lastname, setlastname] = useState("");
   const [serviceshired, setserviceshired] = useState("");
@@ -540,4 +540,4 @@ const feedback = () => {
   );
 };
 
-export default feedback;
+export default Feedback;

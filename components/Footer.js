@@ -33,7 +33,7 @@ const Footer = () => {
                     Careers
                   </a>{" "}
                   <span className="fs-6 fw-bold text-primary">
-                    &mdash; We're hiring
+                    &mdash; We are hiring
                   </span>
                 </li>
                 <li>

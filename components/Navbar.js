@@ -43,7 +43,7 @@ const Navbar = () => {
                 return (
                   <>
                     {section !== null ? (
-                      <li className="nav-item dropdown">
+                      <li key={id} className="nav-item dropdown">
                         <a
                           className="nav-link dropdown-toggle"
                           href={`/services${link.href}`}
@@ -79,7 +79,7 @@ const Navbar = () => {
                         )}
                       </li>
                     ) : (
-                      <li className="nav-item">
+                      <li key={id} className="nav-item">
                         <Link href={link.href}>
                           <a className="nav-link " aria-current="page">
                             {link.label}

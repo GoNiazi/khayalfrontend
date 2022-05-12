@@ -112,7 +112,7 @@ const AboutUs = () => {
                 <div className="flex-grow-1 ms-4">
                   <h5>Simple and all-inclusive</h5>
                   <p>
-                    We worry about the details so that our residents don't have
+                    We worry about the details so that our residents dont have
                     to. From our online application process to simple,
                     all-inclusive billing we aim to make the living experience
                     as effortless as possible.

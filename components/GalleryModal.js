@@ -50,6 +50,7 @@ const GalleryModal = (props) => {
               return (
                 <img
                   src={attributes.url}
+                  key={id}
                   style={{
                     height: "100%",
                     width: "100%",

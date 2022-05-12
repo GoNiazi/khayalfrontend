@@ -17,7 +17,10 @@ const Challenges = () => {
     <>
       {data.homeSectionTypes.data.map(({ id, attributes }) => {
         return (
-          <div className="container content-space-t-2 content-space-t-lg-3">
+          <div
+            key={id}
+            className="container content-space-t-2 content-space-t-lg-3"
+          >
             <div className="row justify-content-lg-between align-items-lg-center">
               <div className="col-lg-6 mb-5 mb-lg-0">
                 <img

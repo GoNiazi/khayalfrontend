@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const TrustedClients = () => {
   const { data, loading, error } = useQuery(GET_CLIENTS);
-  if (loading) return <h2>Loading</h2>;
+  // if (loading) return <h2>Loading</h2>;
   if (error) {
     console.log(error);
   }

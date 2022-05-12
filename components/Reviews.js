@@ -6,9 +6,9 @@ import Link from "next/link";
 const Reviews = () => {
   const [review, setreview] = useState([]);
   const { data, loading, error } = useQuery(GET_REVIEWS);
-  if (loading) {
-    return <h1>Loading</h1>;
-  }
+  // if (loading) {
+  //   return <h1>Loading</h1>;
+  // }
   if (error) {
     console.log(error);
   }

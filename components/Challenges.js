@@ -8,7 +8,7 @@ const Challenges = () => {
       slug: "challenges-section",
     },
   });
-  if (loading) return <h3>Loading</h3>;
+  // if (loading) return <h3>Loading</h3>;
   if (error) {
     console.log(error);
   }

@@ -4,9 +4,9 @@ import { GET_NAVBAR } from "../gqloperations/queries";
 import Link from "next/link";
 const Navbar = () => {
   const { data, loading, error } = useQuery(GET_NAVBAR);
-  if (loading) {
-    return <h3>Loading</h3>;
-  }
+  // if (loading) {
+  //   return <h3>Loading</h3>;
+  // }
   if (error) {
     console.log(error);
   }

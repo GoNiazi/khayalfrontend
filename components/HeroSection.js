@@ -10,7 +10,7 @@ const HeroSection = () => {
       slug: "hero-section",
     },
   });
-  if (loading) return <h3>Loading</h3>;
+  // if (loading) return <h3>Loading</h3>;
   if (error) {
     console.log(error);
   }

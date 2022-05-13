@@ -5,19 +5,18 @@ import Link from "next/link";
 
 const Services = () => {
   const [post, setpost] = useState([]);
+  const [skel, setskel] = useState(false);
   const { data, loading, error } = useQuery(GET_SOFT_SERVICES, {
     variables: {
       slug: "soft-services",
     },
   });
 
-  if (loading) return <h3>Loading</h3>;
+  if (loading) return <h1></h1>;
   if (error) {
     console.log(error);
   }
-
   post = data.services.data[0].attributes.posts.data.slice(0, 6);
-
   return (
     <div className="container" style={{ marginTop: "80px" }}>
       <div className="row">

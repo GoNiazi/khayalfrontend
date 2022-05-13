@@ -1,0 +1,17 @@
+.backpic{
+    height: 458px;
+}
+
+@media screen and (max-width: 511px) {
+    .backpic{
+        height: 350px;
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    .frontpic{
+        height: 120px;
+        top: 20px;
+        left: 40px;
+    }
+  }

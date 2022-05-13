@@ -9,7 +9,7 @@ const Gallery = () => {
   const [modalShow, setmodalShow] = useState(false);
   const { data, loading, error } = useQuery(GET_GALLERY);
   if (loading) {
-    return <h2>Loading</h2>;
+    return <h2></h2>;
   }
   if (error) {
     console.log(error);

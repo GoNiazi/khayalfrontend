@@ -1,8 +1,9 @@
 import "../styles/vendor.min.css";
 
 import "../styles/theme.min.css";
-
+import "react-loading-skeleton/dist/skeleton.css";
 import "react-multi-carousel/lib/styles.css";
+import "../styles/globals.css";
 import Head from "next/head";
 import Script from "next/script";
 import { useEffect } from "react";

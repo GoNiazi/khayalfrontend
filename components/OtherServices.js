@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "../styles/OtherServices.module.css";
 
 const OtherServices = () => {
   return (
@@ -6,7 +7,7 @@ const OtherServices = () => {
       <div className="container position-relative content-space-1">
         <div className="row">
           <div className="col-lg-5 align-self-lg-end mb-7 mb-lg-0">
-            <h2>
+            <h2 className={styles.heading}>
               We are willing to partner and grow with business and take on a
               role of a trusted business advisor
             </h2>

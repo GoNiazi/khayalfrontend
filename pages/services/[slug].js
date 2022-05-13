@@ -5,6 +5,7 @@ import { useQuery } from "@apollo/client";
 import { GET_SERVICE } from "../../gqloperations/queries";
 import Link from "next/link";
 import Image from "next/image";
+import Skeleton from "react-loading-skeleton";
 
 const SingleService = () => {
   const [ser, setser] = useState([]);
@@ -81,15 +82,16 @@ const SingleService = () => {
               )}
             </>
           ) : (
-            <h1>loading</h1>
+            <>
+              <Skeleton height={500} />
+
+              <Skeleton count={3} />
+            </>
           )}
         </div>
 
         <div className="text-center">
-          <a
-            className="btn btn-white btn-pointer"
-            href="../page-customer-stories.html"
-          >
+          <a className="btn btn-white btn-pointer" href="#">
             View All Services
           </a>
         </div>

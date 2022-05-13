@@ -23,13 +23,9 @@ const TrustedClients = () => {
 
           <div className="row justify-content-center text-center">
             <div className="col-4 col-sm-3 col-md-2 py-3">
-              {[1, 2, 3, 4, 5].map((n) => {
-                return (
-                  <p>
-                    <Skeleton height={60} />
-                  </p>
-                );
-              })}
+              <p>
+                <Skeleton height={60} />
+              </p>
             </div>
           </div>
         </div>

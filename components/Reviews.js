@@ -25,7 +25,6 @@ const Reviews = () => {
           <div className="w-lg-65 text-center mx-lg-auto mb-5 mb-sm-7 mb-lg-10">
             <h2>Loved by business and individuals across the nation</h2>
           </div>
-
           <ul className="list-unstyled list-timeline list-py-3">
             <li className="list-timeline-item">
               <div className="card card-shadow">
